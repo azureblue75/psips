@@ -97,6 +97,7 @@ ffmpeg -y \
   -map 0:0 -map 1:0 \
   -f segment \
   -segment_time 8 \
+  -segment_wrap 10 \
   -segment_format mpegts \
   -segment_list "$base/live.m3u8" \
   -segment_list_size 720 \
